@@ -1,6 +1,9 @@
 extends main.pug
 include navmenu.pug
 
+block css
+    link(rel="stylesheet", href="/css/main.css")
+
 block title
     title= title
 
@@ -8,7 +11,7 @@ block linklist
     +navList("/")
 
 block sarlavha
-    h1.text-3xl.font-bold.tracking-tight.text-gray-900= title 
+    h1.text-3xl.font-bold.tracking-tight.text-gray-900 So'rovnoma
 
 block content
-    p salom olam demak voris olish ishlayapti
+    include questionnaire.pug

@@ -1,0 +1,11 @@
+.main-title {
+    width: 100%;
+    text-align: right;
+    font-size: 12px;
+}
+
+.main-title-container {
+    display: inline-block;
+    width: 320px;
+    text-align: center;
+}
