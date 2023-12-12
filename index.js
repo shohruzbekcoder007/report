@@ -37,12 +37,21 @@ mongoose.connect('mongodb+srv://forhumoyun_aka:forhumoyun_aka@cluster0.ycg5joo.m
   });
 
 app.get("/", (req,res) => {
-//   const json = require('./static/json/answers.json')
-//   return res.render('main_all', {
-//     testlist: [],
-//     json: json
-//   })
-    return res.send("salom olam")
+  return res.render('index', {
+    title: "So'rovnoma"
+  })
+});
+
+app.get("/about", (req,res) => {
+  return res.render('about', {
+    title: "Biz haqimizda"
+  })
+});
+
+app.get("/guide", (req,res) => {
+  return res.render('guide', {
+    title: "So'rovnomani to'ldirish bo'yicha yo'riqnoma"
+  })
 });
 
 app.listen(port, ()=> {

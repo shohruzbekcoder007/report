@@ -1,0 +1,14 @@
+extends main.pug
+include navmenu.pug
+
+block title
+    title= title
+
+block linklist
+    +navList("/about")
+
+block sarlavha
+    h1.text-3xl.font-bold.tracking-tight.text-gray-900= title 
+
+block content
+    p salom olam demak voris olish ishlayapti
